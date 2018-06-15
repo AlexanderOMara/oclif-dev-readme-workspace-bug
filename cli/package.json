@@ -1,0 +1,46 @@
+{
+  "name": "@oclif-dev-readme-workspace-bug/cli",
+  "description": "testing",
+  "version": "0.0.0",
+  "keywords": [],
+  "main": "lib/index",
+  "scripts": {
+    "readme": "oclif-dev readme"
+  },
+  "bin": {
+    "testing": "./bin/run"
+  },
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "1.13.27",
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^1",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "chai": "^4",
+    "globby": "^8",
+    "mocha": "^5",
+    "ts-node": "^6",
+    "tslint": "^5",
+    "typescript": "^2.8"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/oclif.manifest.json"
+  ],
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "testing",
+    "plugins": [
+      "@oclif/plugin-help"
+    ],
+    "description": "testing"
+  }
+}
